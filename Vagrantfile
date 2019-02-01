@@ -11,5 +11,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "init.sh"
 
   config.vm.hostname = "vagrant-custodian"
-  config.vm.network "private_network", ip: "192.168.0.130"
+  config.vm.network "public_network", ip: "192.168.0.130"
 end
