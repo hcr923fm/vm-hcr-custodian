@@ -1,11 +1,13 @@
 curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
 sudo apt-get update
-sudo apt-get install -y nodejs npm build-essential git
+sudo apt-get install -y nodejs build-essential git
 
-git clone https://github.com/hc923fm/custodian
+cd /home/vagrant
+git clone http://github.com/hcr923fm/custodian
 cd custodian
 
+sudo npm install -g @angular/cli
 npm install
-echo "/var/LoggedAudio" > .env
+echo "AUDIO_FILE_DIRECTORY='/var/LoggedAudio'" > .env
 
-npm build && npm start
+ng build && npm start
