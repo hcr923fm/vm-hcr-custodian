@@ -2,7 +2,6 @@ curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get install -y nodejs build-essential git
 
-cd /home/vagrant
 git clone http://github.com/hcr923fm/custodian
 cd custodian
 
