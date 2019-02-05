@@ -11,4 +11,4 @@ npm install
 echo "AUDIO_FILE_DIRECTORY='/var/LoggedAudio'" > .env
 echo "CUSTODIAN_HOST='192.168.0.130'" >> .env
 
-ng run-script build && npm start
+npm run-script build && npm start
